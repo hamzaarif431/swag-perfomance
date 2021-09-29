@@ -1,0 +1,5229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: "Hyundai";
+  src: url("../fonts/Hyundai.TTF");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  overflow: hidden;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* animations */
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* animations close */
+
+/* zain header */
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+}
+
+header .top-bar {
+  background: linear-gradient(90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  padding: 5px 0 7px 0;
+  animation: gradient 15s ease infinite;
+}
+
+header .top-bar .top-bar-time .time {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: inherit;
+}
+
+header .top-bar .top-bar-number {
+  text-align: right;
+}
+
+header .top-bar .top-bar-number .number {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: inherit;
+  position: relative;
+  text-decoration: none;
+}
+
+header .top-bar .top-bar-number .number::before {
+  position: absolute;
+  left: -25px;
+  top: 0;
+  content: "\f095";
+  font-family: "Font Awesome 5 Pro";
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+header .navbar-brand {
+  width: 15%;
+}
+
+header .navbar-brand .logo {
+  width: 100%;
+}
+
+header .navbar {
+  background-color: transparent;
+  box-shadow: 0 0px 0px rgb(0 0 0 / 10%);
+  transition: all 0.5s ease-in-out;
+}
+
+header.sticky .navbar {
+  background-color: #000;
+  box-shadow: 0 1px 8px rgb(0 0 0 / 10%);
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  font-family: Poppins;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  /* padding: 0 10px; */
+  margin: 0 10px;
+  letter-spacing: 1.2px;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #e60003;
+}
+
+header .navbar .navbar-nav .dropdown .nav-link {
+  font-family: David Libre;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  padding: 0 18px 0 8px;
+}
+
+header .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item {
+  font-family: Lora;
+  color: #777;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  padding: 10px 22px 10px 22px;
+}
+
+header .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #F9F9F9;
+  color: #777;
+}
+
+header .navbar .navbar-nav .dropdown .nav-link::after {
+  position: absolute;
+  display: block;
+  content: '\f078';
+  font-family: "Font Awesome 5 Pro";
+  font-size: 8px;
+  top: 5px;
+  right: 5px;
+  color: rgba(82, 82, 82, .45);
+  appearance: none;
+  border-top: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar .navbar-nav .dropdown .nav-link:focus {
+  outline: none;
+}
+
+header .navbar .navbar-nav .dropdown .nav-link:hover {
+  color: #ed2353;
+}
+
+header .navbar .icon-btn-main .sidebar-toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 10px;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+header .navbar .icon-btn-main .sidebar-toggle:last-child {
+  margin-right: 0;
+}
+
+header .navbar .icon-btn-main .sidebar-toggle i {
+  font-size: 19px;
+  transition: all .25s ease;
+  color: #fff;
+}
+/* b css  */
+/* menu 1 */
+.mega_menu{
+  background-color: #fff;
+  width: 849px;
+  height: auto;
+  position: absolute;
+  overflow:hidden;
+}
+.mega_menu .nav-item button{
+  display: block;
+    height: 80px;
+    align-items: center
+    background:#F5F5F5;
+}
+.mega_menu
+.mega_menu .nav-tabs{
+border: none;
+}
+.mega_menu .nav-item{
+
+}
+.mega_menu .nav-item  button.active{
+  background: linear-gradient( 
+    90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);  color: #fff !important;
+
+
+
+}
+.mega_menu .nav-item  button{
+  width: 212px;
+  margin: 0 !important;
+  border: 1px solid #70707012;
+  border-radius: 0px;
+  font-family: Poppins;
+  color: #000;
+  position: relative;
+  font-size: 12px !important;
+}
+.mega_menu .nav-item  button.active::after{
+    content: '';
+    position: absolute;
+  border: 8px solid #dc0003;
+    bottom: 30px;
+    right: -16px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: none;
+    transform: rotate(-90deg);
+}
+
+.mega_menu .nav-item .nav-link{
+    color: #000 !important;
+       height: 86px;
+
+}
+
+.mega_menu .tab-content .tab1_list{
+  position: relative;
+
+}
+.mega_menu .tab-content .tab1_list ul{
+
+}
+.mega_menu .tab-content .tab1_list ul li{
+  padding: 14px 0;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;      border-bottom: 2px solid #80808040;
+
+transition: 0.5s ease-in-out;
+  position: relative;
+
+}
+.mega_menu .tab-content .tab1_list ul li:hover{
+  border-bottom: 2px solid red;
+  font-weight: 700;
+  color: red;
+}
+.mega_menu .tab-content .tab1_list_img {
+  position: relative;
+}
+.mega_menu .tab-content .tab1_list_img:before{
+    content: '';
+    left: 40px;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+    width: 360px;
+    height: 360px;
+    position: absolute;
+    border-radius: 50%;
+    background: RGBA(201,0,3,3);
+    z-index: 0;
+}
+.mega_menu .tab-content .tab1_list_img img{
+    width: 66%;
+    object-fit: cover;
+    position: relative;
+    margin: 90px 0 0 -20px;
+
+}
+/* menu 1 */
+
+/* .mega_menu .tab-content .tab1_list ul li::after{
+  position: absolute;
+  content: '';
+  width: 132px;
+  height: 2px;
+  background-color: #70707033;
+  bottom: 6px;
+  left: 0px;
+} */
+/* .mega_menu .tab-content .tab1_list ul li:active{
+  color: red;
+} */
+
+
+#display_menu{
+  display: none;
+}
+#display_menu_2{
+  display: none;
+}
+
+/* menu 2 */
+
+.mega_menu_2{
+  background-color: #fff;
+  width: 849px;
+  height: 371px;
+  position: absolute;
+}
+.mega_menu_2 .nav-tabs{
+border: none;
+}
+.mega_menu_2 .nav-item{
+
+}
+.mega_menu_2 .nav-item  button.active{
+  background: linear-gradient( 
+    90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);  color: #fff !important;
+}
+.mega_menu_2 .nav-item  button{
+  width: 212px;
+  margin: 0 !important;
+  border: 1px solid #70707012;
+  border-radius: 0px;
+  font-family: Poppins;
+  color: #000;
+  position: relative;
+  font-size: 12px !important;
+}
+.mega_menu_2 .nav-item  button.active::after{
+  content: '';
+  position: absolute;
+  border: 12px solid #dc0003;
+  bottom: -19px;
+  right: 86px;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: none;
+}
+
+.mega_menu_2 .nav-item .nav-link{
+  color: #000 !important;
+  padding: 21px 0;
+
+}
+.mega_menu_2 .tab-content{
+  background: #F8F8F8;
+
+}
+.mega_menu_2 .tab-content .tab1_list{
+  position: relative;
+
+}
+.mega_menu_2 .tab-content .tab1_list ul{
+
+}
+.mega_menu_2 .tab-content .tab1_list ul li{
+  padding: 14px 0;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;      border-bottom: 2px solid #80808040;
+
+transition: 0.5s ease-in-out;
+  position: relative;
+
+}
+.mega_menu_2 .tab-content .tab1_list ul li:hover{
+  border-bottom: 2px solid red;
+  font-weight: 700;
+  color: red;
+}
+.mega_menu_2 .tab-content .tab1_list_img {}
+.mega_menu_2 .tab-content .tab1_list_img img{
+  width: 68%;
+  object-fit:cover;
+
+}
+/* menu 2 */
+
+/* footer */
+
+/*footer css start*/
+
+footer {
+  background-image: linear-gradient(to right, #8c0001, #9a0002, #a90003, #b80003, #c70002, #c50002, #c30003, #c10003, #ad0004, #9a0005, #870003, #740001);
+  padding: 50px 0 50px;
+  position: relative;
+  z-index: 1;
+  /* overflow-x: hidden; */
+}
+
+footer::after {
+    content: '';
+    position: absolute;
+    background-image: url(../images/copy_img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: right;
+    right: 0;
+    width: 143px;
+    height: 280px;
+    top: -100px;
+    z-index: -1;
+}
+
+.footerimg {
+  padding-bottom: 50px;
+}
+
+.footerlist h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.footerlist ul li a {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.footerlist ul {
+  padding: 0;
+}
+
+.payimg {
+  padding-top: 40px;
+}
+
+.footericon h5 {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.footericon ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 7px;
+}
+
+.footericon ul li a {
+  color: #fff;
+}
+
+.payimg img {
+  width: 80%;
+}
+
+.footerimg img {
+  width: 70%;
+}
+
+/*footer css end*/
+
+/*copy sec start*/
+
+section.copysec {
+  background-color: #000;
+  padding: 20px 0 8px;
+}
+
+.copytext p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/*copy sec end*/
+
+/* sec-home-slider */
+
+.sec-home-slider {
+  position: relative;
+  background-color: #000;
+}
+
+.sec-home-slider .home-slider .home-slider-main {
+  position: relative;
+}
+
+.sec-home-slider .home-slider .owl-item.active .home-slider-main .img-main .img-thumb {
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+  animation-delay: 0.5s;
+}
+
+.sec-home-slider .home-slider .home-slider-main .img-main .home-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.sec-home-slider .home-slider .home-slider-main .img-main .home-desc .home-sl-h {
+  font-family: Hyundai;
+  font-size: 70px;
+  color: #fff;
+  margin: 0 0 30px 0;
+  padding: 0;
+  letter-spacing: 5px;
+  line-height: 85px;
+}
+
+.sec-home-slider .home-slider .owl-item.active .home-slider-main .img-main .home-desc .home-sl-h {
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: backInDown;
+  animation-delay: 0.7s;
+}
+
+.sec-home-slider .home-slider .home-slider-main .img-main .home-desc .home-sl-p {
+  font-family: Poppins;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.sec-home-slider .home-slider .owl-item.active .home-slider-main .img-main .home-desc .home-sl-p {
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: backInUp;
+  animation-delay: 0.8s;
+}
+
+.sec-home-slider .home-slider .home-slider-main .img-main .home-desc .slider-btn .shop-btn {
+  background: linear-gradient(90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-family: Hyundai;
+  font-size: 15px;
+  color: #fff;
+  margin: 35px 0 0 0;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: inherit;
+  width: 330px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sec-home-slider .home-slider .home-slider-main .img-main .home-desc .slider-btn .shop-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+.sec-home-slider .home-slider .owl-item.active .home-slider-main .img-main .home-desc .slider-btn .shop-btn {
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: bounceInUp;
+  animation-delay: 1s;
+}
+
+.sec-home-slider .home-slider .home-dots {
+  position: absolute;
+  bottom: 0;
+  top: 280px;
+  right: 120px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.sec-home-slider .home-dots .owl-dot.active span, .sec-home-slider .home-dots .owl-dot:hover span {
+  background: linear-gradient(90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  transition: all 0.2s ease-in-out;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0 2px;
+}
+
+.sec-home-slider .home-slider .home-dots .owl-dot span {
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  margin: 0 2px;
+}
+
+.sec-home-slider .search-form {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  z-index: 500;
+}
+
+.sec-home-slider .search-form .search-head .sh {
+  font-family: Hyundai;
+  font-size: 61px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.sec-home-slider .search-form .search-head .sh .inner {
+  font-family: Hyundai;
+  font-size: 30px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+}
+
+.sec-home-slider .search-form .banner-form {
+  background: linear-gradient(90deg, rgba(181, 181, 181, 1) 0%, rgba(242, 242, 242, 1) 50%, rgba(245, 245, 245, 1) 100%);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sec-home-slider .search-form .banner-form .form-select {
+  background-image: none;
+  text-align: center;
+  text-align-last: center;
+  font-family: Poppins;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 500;
+  height: 55px;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+}
+
+.sec-home-slider .search-form .banner-form .form-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.sec-home-slider .search-form .banner-form .form-btn .search-form-btn {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sec-home-slider .search-form .banner-form .form-btn .search-form-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+/* .sec-home-slider  close */
+
+/* sec-pop-categ */
+
+.sec-pop-categ {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0 50px;
+  background-color: #000;
+  background-image: url(../images/banner-categ.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -510px;
+}
+
+.sec-pop-categ .pop-categ-h .pop-h {
+  color: #fff;
+  font-family: Hyundai;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.sec-pop-categ .categ-btn-main .categ-btn {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-family: Poppins;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin: 35px 0 0 0;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: inherit;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-left: auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.sec-pop-categ .categ-btn-main .categ-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+.sec-pop-categ .categ-pills {
+  justify-content: space-evenly;
+}
+
+.sec-pop-categ .categ-pills .categ-item .categ-link {
+  font-family: Poppins;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin: 35px 0 35px 0;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: inherit;
+  width: 220px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  margin-left: auto;
+  border: 3px solid #FFFFFF;
+}
+
+.sec-pop-categ .categ-pills .categ-link.active, .categ-pills .show>.categ-link {
+  background-color: #fff;
+  color: #000;
+}
+
+/* sec-special */
+
+.sec-special {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  padding: 50px 0 50px 0;
+}
+
+.sec-special .special-head {
+  color: #fff;
+  font-family: Hyundai;
+  font-size: 50px;
+  line-height: inherit;
+  text-transform: unset;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.sec-special .special-slider .special-main .special-img {
+  position: relative;
+}
+
+.sec-special .special-slider .special-main .special-img .special-thumb {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  transform: scale(0.5);
+  position: relative;
+}
+
+.sec-special .special-slider .owl-stage-outer {
+  padding: 50px 0 0 0;
+}
+
+.sec-special .special-slider .special-main .special-desc .special-name {
+  text-align: center;
+  font-family: Poppins;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 40px 0 0 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.sec-special .special-slider .owl-stage .owl-item.center .item .special-main .special-img .special-thumb {
+  width: 100%;
+  filter: none;
+  transform: scale(1);
+}
+
+.sec-special .special-slider .owl-stage .owl-item.center .item .special-main .special-img::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  top: -10px;
+  left: -40px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #B70002;
+  animation: flipInX 2s ease-in-out;
+}
+
+.sec-special .special-slider .owl-stage .owl-item.center .item .special-main .special-img::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  top: -23px;
+  left: -49px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #B70002;
+  animation: rollIn 1s ease-in-out;
+}
+
+.sec-special .special-slider .owl-stage .owl-item.center .item .special-main .special-desc .special-name {
+  opacity: 100%;
+}
+
+/* .sec-special .special-slider .special-nav {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0;
+  z-index: 500;
+} */
+
+.sec-special .special-slider .special-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.sec-special .special-slider .special-nav .special-prev {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  /* height: 30px;
+  width: 50px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  color: #000;
+  font-size: 20px;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 25px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 3px 3px 6px 1px #ffffff47; */
+}
+.sec-special .special-slider .special-nav .special-prev .prev {
+  width: 50px;
+  height: auto;
+}
+.sec-special .special-slider .special-nav .special-next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  /* border: 2px solid #fff;
+  height: 30px;
+  width: 50px;
+  border-radius: 0;
+  color: #000;
+  font-size: 20px;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 25px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 3px 3px 6px 1px #ffffff47; */
+}
+.sec-special .special-slider .special-nav .special-next .next {
+  width: 50px;
+  height: auto;
+}
+
+/* sec-pop-categ */
+
+.sec-pop-categ {
+  position: relative;
+}
+
+.sec-pop-categ .categ-content .categ-pane .categ-card {
+  background-color: black;
+  border-radius: 20px;
+  border: 2px solid #B9B9B9;
+  background-image: url(../images/categ-bg.png);
+  background-repeat: no-repeat;
+  background-size: 70% 100%;
+  background-position: left center;
+  padding: 50px 0 50px 0;
+  min-height: 250px;
+  max-height: 250px;
+}
+
+.sec-pop-categ .categ-content .categ-pane .categ-card .card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sec-pop-categ .categ-content .categ-pane .categ-card .card-row .img {
+  position: relative;
+  z-index: 1;
+  left: -40px;
+}
+
+.sec-pop-categ .categ-content .categ-pane .categ-card .card-row .img::before {
+  /* content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../images/categ-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left center;
+  background: linear-gradient(
+    90deg
+    , rgba(93,0,1,1) 0%, rgba(230,0,3,1) 50%, rgba(93,0,1,1) 100%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; */
+}
+
+.sec-pop-categ .categ-content .categ-pane .categ-card .card-row .img .categ-thumb {
+  width: 70%;
+  height: auto;
+}
+
+.sec-pop-categ .categ-content .categ-pane .categ-card .card-row .categ-desc {
+  padding: 0 30px 0 0;
+}
+
+.sec-pop-categ .categ-content .categ-pane .categ-card .card-row .categ-desc .categ-ch {
+  font-family: Hyundai;
+  font-size: 30px;
+  color: #fff;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+.sec-pop-categ .categ-content .categ-pane .categ-card .card-row .categ-desc .categ-type {
+  font-family: Poppins;
+  font-size: 15px;
+  color: #fff;
+  text-align: right;
+  text-transform: capitalize;
+  line-height: 20px;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+}
+
+.sec-customer {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+  padding: 50px 0 50px 0;
+}
+
+.sec-customer .special-head {
+  color: #fff;
+  font-family: Hyundai;
+  font-size: 50px;
+  line-height: inherit;
+  text-transform: unset;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.sec-customer .special-p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.sec-customer .special-slider .special-main .special-img {
+  position: relative;
+}
+
+.sec-customer .special-slider .special-main .special-img .special-thumb {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.2s ease-in-out;
+  display: block;
+  margin: 0 auto;
+  transform: scale(0.5);
+  position: relative;
+}
+
+.sec-customer .special-slider .owl-stage-outer {
+  padding: 50px 0 0 0;
+}
+
+.sec-customer .special-slider .special-main .special-desc .special-name {
+  text-align: center;
+  font-family: Poppins;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 40px 0 0 0;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.sec-customer .special-slider .owl-stage .owl-item.center .item .special-main .special-img .special-thumb {
+  width: 100%;
+  filter: none;
+  transform: scale(1);
+}
+
+.sec-customer .special-slider .owl-stage .owl-item.center .item .special-main .special-img::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  top: -10px;
+  left: -40px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #B70002;
+  animation: flipInX 2s ease-in-out;
+}
+
+.sec-customer .special-slider .owl-stage .owl-item.center .item .special-main .special-img::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  top: -23px;
+  left: -49px;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #B70002;
+  animation: rollIn 1s ease-in-out;
+}
+
+.sec-customer .special-slider .owl-stage .owl-item.center .item .special-main .special-desc .special-name {
+  opacity: 100%;
+}
+
+/* .sec-customer .special-slider .special-nav {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0;
+  z-index: 500;
+} */
+
+.sec-customer .special-slider .special-nav {
+  /* position: absolute;
+  bottom: 87px;
+  right: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  /* z-index: 500; */
+}
+
+.sec-customer .special-slider .special-nav .special-prev {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  /* height: 30px;
+  width: 50px;
+  border: 2px solid #fff;
+  border-radius: 0;
+  color: #000;
+  font-size: 20px;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 25px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 3px 3px 6px 1px #ffffff47; */
+}
+.sec-customer .special-slider .special-nav .special-prev .prev {
+  width: 50px;
+  height: auto;
+}
+.sec-customer .special-slider .special-nav .special-next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  /* border: 2px solid #fff;
+  height: 30px;
+  width: 50px;
+  border-radius: 0;
+  color: #000;
+  font-size: 20px;
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  font-size: 25px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 3px 3px 6px 1px #ffffff47; */
+}
+
+.sec-customer .special-slider .special-nav .special-next .next {
+  width: 50px;
+  height: auto;
+}
+
+.instagram{
+  background-color: #000;
+    padding:50px 0 80px 0;
+}
+.instagram h2{
+      color: #fff;
+    font-family: Hyundai;
+    font-size: 50px;
+    line-height: inherit;
+    text-transform: unset;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.instagram p{
+      font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.instagram  .slick-slide{
+    margin: 0 20px;
+        width: 230px !important;
+}
+.instagram .slick-slide img{
+    border: 5px solid #D90000;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.instagram .slick-prev:before {
+    content: '\f177';
+    top: 0;
+    left: 81px;
+    right: inherit;
+    font-family: "Font Awesome 5 Pro";
+    background-image: inherit;
+    background: #FFFFFF;
+    color: #000;
+    width: 55px;
+    height: 30px;
+    line-height: 32px;
+    font-size: 28px;
+        box-shadow: 0px 0px 2px 0px #fff;
+}
+.instagram .slick-next:before{
+      content: '\f178';
+    top: 0;
+    right: 26px;
+    left: inherit;
+    font-family: "Font Awesome 5 Pro";
+    background-image: inherit;
+    background: #FFFFFF;
+    color: #000;
+    width: 55px;
+    height: 30px;
+    line-height: 32px;
+    font-size: 28px;
+        box-shadow: 0px 0px 2px 0px #fff;
+}
+.instagram .slick-prev{
+  right: inherit;
+  bottom: 85px;
+}
+.instagram .slick-next{
+  left: inherit;
+  bottom: 85px;
+}
+/*stocking distributer sec start*/
+
+section.stockingdistruboterssec {
+  padding: 50px 0 50px;
+}
+
+.stockingdistruboterstext h3 {
+  font-family: 'Hyundai';
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 300;
+  background: -webkit-linear-gradient(#630102, #ba0003);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stockingdistruboterstext h3 span {
+  display: block;
+}
+
+.stockingdistruboterstext p {
+  text-align: center;
+  width: 40%;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 2% auto 6%;
+  display: table;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stockingdistruboterslist img {
+  width: 100%;
+  object-fit: contain;
+  height: 100px;
+}
+
+/*stocking distributer sec end*/
+
+/*snap ring retainer start*/
+
+section.snapringretainersec {
+  padding: 80px 0 80px;
+  background-color: #000;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.snaptext a {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 50px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  transition: all 0.2 ease-in-out;
+}
+
+.snaptext a:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+.snaptext h4 {
+  color: #fff;
+  font-family: 'Hyundai';
+  font-size: 50px;
+  line-height: 55px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.snaptext h4 span {
+  display: block;
+}
+
+.snaptext p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+section.snapringretainersec:before {
+  content: '';
+  background-image: url(../images/snap-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  left: -6%;
+  top: 7%;
+  z-index: -1;
+}
+
+section.snapringretainersec:after {
+  content: '';
+  background-image: url(../images/snap-img1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 28%;
+  height: 75%;
+  position: absolute;
+  right: -19%;
+  top: -6%;
+  background-position: right;
+  z-index: -1;
+}
+
+/*snap ring retainer end*/
+
+/*do what we do sec start*/
+
+section.dowhatsec {
+  background-color: #000;
+  padding: 50px 0 100px;
+}
+
+.dowhattext h3 {
+  color: #fff;
+  font-family: 'Hyundai';
+  font-size: 50px;
+  line-height: 55px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.dowhattext p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  width: 50%;
+  margin: 0 auto 3%;
+  display: table;
+}
+
+.whatimg img {
+  border: 10px solid #fff;
+  border-radius: 30px;
+}
+
+.whatimg {
+  position: relative;
+}
+
+.whatimg:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #0000004d;
+}
+
+.whatimg a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: #fff;
+  font-size: 40px;
+}
+
+/*do what we do sec end*/
+
+/*learn sec start*/
+
+section.learnwithbestsec {
+  background-image: url(../images/learn-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 100px 0 100px;
+}
+
+.learntext h4 {
+  color: #fff;
+  font-family: 'Hyundai';
+  font-size: 50px;
+  line-height: 55px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.learntext h4 span {
+  display: block;
+}
+
+.learntext p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.learntext a {
+  font-size: 18px;
+  line-height: 23px;
+  color: #000;
+  font-weight: 600;
+  padding: 12px 50px;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+/*learn sec end*/
+
+/*dealer sec start*/
+
+section.dealerbenefitssec {
+  padding: 100px 0 100px;
+}
+
+.daelerbenefitstext h3 {
+  font-family: 'Hyundai';
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#630102, #ba0003);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+}
+
+.daelerbenefitstext h3 span {
+  display: block;
+}
+
+.daelerbenefitstext p {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.daelerbenefitstext ul {
+  float: left;
+  width: 50%;
+  padding: 0 30px 20px;
+}
+
+.daelerbenefitstext ul li {
+  position: relative;
+  line-height: 35px;
+  color: #000;
+  font-size: 14px;
+}
+
+.daelerbenefitstext a {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 50px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.daelerbenefitstext a:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+.daelerbenefitstext ul li:before {
+  content: "\f00c";
+  position: absolute;
+  font-family: "Font Awesome 5 Pro";
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  left: -31px;
+  background-image: linear-gradient(to right, #8c0001, #9a0002, #a90003, #b80003, #c70002, #c50002, #c30003, #c10003, #ad0004, #9a0005, #870003, #740001);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #fff;
+}
+
+.dealerlist img {
+  width: 100%;
+  object-fit: contain;
+  height: 100px;
+}
+
+.dealerlist {
+  border: 3px solid #d80100;
+  padding: 20px 9px;
+  border-radius: 20px;
+  margin: 0 8px;
+}
+
+/*dealer sec end*/
+
+/* Landing Page Css */
+
+#landing_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/bg-image.jpg);
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+h1.diesel_ {
+  font-size: 89px;
+  font-family: "Hyundai";
+  color: rgba(74, 74, 74, 0.418);
+  line-height: 1.2;
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  z-index: 7;
+}
+
+h1.gas_ {
+  font-size: 89px;
+  font-family: "Hyundai";
+  color: rgba(74, 74, 74, 0.418);
+  line-height: 1.2;
+  z-index: 7;
+}
+
+.diesel_container {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h2.diesel {
+  font-family: "Hyundai";
+  /* transform: rotate(
+-60deg
+); */
+  transform: rotate( -60deg);
+  color: #fff;
+  text-shadow: -6px 6px 15px black;
+  letter-spacing: 15px;
+  margin-top: 9%;
+  margin-right: 29%;
+  /* margin-bottom: 0%; */
+  font-size: 6vw;
+  font-style: italic;
+}
+
+h2.diesel a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2.gas {
+  font-family: "Hyundai";
+  transform: rotate( -59deg);
+  color: #fff;
+  text-shadow: -6px 6px 15px black;
+  letter-spacing: 6px;
+  font-size: 6vw;
+  font-style: italic;
+  margin-top: 3%;
+  margin-left: 15%;
+}
+
+h2.gas a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.img-1 {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 18vw;
+}
+
+.img-2 {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  width: 18vw;
+}
+
+/* sec-banner */
+
+.sec-banner {
+  position: relative;
+  background-image: url(../images/banner-img.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0 150px 0;
+}
+
+.sec-banner .banner-desc .banner-h {
+  font-family: "Hyundai";
+  font-size: 71px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 5px;
+}
+
+.sec-banner .banner-desc .banner-p {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: inherit;
+  text-align: center;
+  margin: 25px 0 0 0;
+  line-height: 23px;
+  padding: 0;
+}
+
+/* section-login */
+
+.section-login {
+  position: relative;
+  padding: 100px 0 200px 0;
+  background-color: #000;
+}
+
+.section-login .login-form {}
+
+.section-login .login-form .form-h {
+  font-family: "Hyundai";
+  font-size: 50px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px;
+}
+
+.section-login .login-form .form-p {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+  margin: 5px 0 0 0;
+  line-height: 27px;
+  padding: 0;
+}
+
+.section-login .login-form .form-p .signup-a {
+  color: #C90003;
+}
+
+.section-login .login-form .google-btn {
+  background-color: #fff;
+  border-radius: 50px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+  text-transform: inherit;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  margin: 12px 0 0 0;
+  padding: inherit;
+}
+
+.section-login .login-form .google-btn .google-thumb {
+  margin: 0 10px 0 0;
+}
+
+.section-login .login-form .facebook-btn {
+  background-color: #527BCB;
+  border-radius: 50px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  margin: 12px 0 0 0;
+  padding: inherit;
+}
+
+.section-login .login-form .facebook-btn .face-thumb {
+  margin: 0 10px 0 0;
+}
+
+.section-login .login-form .line-seperate .lines {
+  font-family: Poppins;
+  font-weight: 500;
+  color: #fff;
+  text-transform: inherit;
+  font-size: 20px;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: 10px 0 10px 0;
+}
+
+.section-login .login-form .line-seperate .lines::before {
+  content: "";
+  position: absolute;
+  left: 110px;
+  top: 15px;
+  background-color: rgb(132 132 132 / 42%);
+  width: 30%;
+  height: 1px;
+  display: block;
+}
+
+.section-login .login-form .line-seperate .lines::after {
+  content: "";
+  position: absolute;
+  right: 110px;
+  top: 15px;
+  background-color: rgb(132 132 132 / 42%);
+  width: 30%;
+  height: 1px;
+  display: block;
+}
+
+.section-login .login-form .custom-label {
+  font-family: "Hyundai";
+  font-size: 25px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+}
+
+.section-login .login-form .custom-control {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: inherit;
+  font-weight: 500;
+  width: 100%;
+  height: 70px;
+  margin: 12px 0 12px 0;
+  padding: 5px 5px 5px 40px;
+  background-color: #fff;
+  border: 1px solid #BBBBBB;
+  border-radius: 50px;
+}
+
+.section-login .login-form .custom-control::-webkit-input-placeholder {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-login .login-form .custom-control:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-login .login-form .custom-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-login .login-form .custom-control:-ms-input-placeholder {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-login .login-form .login-btn {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 35px 0 0 0;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: inherit;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-login .login-form .login-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+/* check box */
+
+.section-login .check-ul {
+  padding: 0;
+  margin: 10px 0 10px 0;
+}
+
+.section-login .check-ul .check-li .container-2 {
+  position: relative;
+  padding: 0 0 0 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Poppins;
+  text-transform: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+
+.section-login .check-ul .check-li .container-2 .inner-page {
+  color: #C90003;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* Hide the browser's default checkbox */
+
+.section-login .check-ul .check-li .container-2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+
+.section-login .check-ul .check-li .container-2 .checkmark-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 2px solid #BBBBBB;
+}
+
+/* On mouse-over, add a grey background color */
+
+.section-login .check-ul .check-li .container-2:hover input~.checkmark-1 {
+  background-color: #BE0F46;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.section-login .check-ul .check-li .container-2 input:checked~.checkmark-1 {
+  background-color: #BE0F46;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.section-login .check-ul .check-li .container-2 .checkmark-1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.section-login .check-ul .check-li .container-2 input:checked~.checkmark-1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.section-login .check-ul .check-li .container-2 .checkmark-1:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* sec-brands */
+
+.sec-brands {
+  position: relative;
+  padding: 100px 0 100px 0;
+  background-color: #000;
+}
+
+.sec-brands .brand-card {
+  background-color: #fff;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  margin: 0 0 50px 0;
+  overflow: hidden;
+  min-height: 300px;
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-brands .brand-card .brand-img .brand-thumb {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* sec-dealer */
+
+.sec-dealer {
+  position: relative;
+  padding: 100px 0 100px 0;
+  background-color: #000;
+}
+
+.sec-dealer .text-box {
+  padding: 0 0 30px 0;
+  margin: 0 0 40px 0;
+  border-bottom: 1px solid #707070;
+}
+
+.sec-dealer .text-box .box-head {
+  font-family: 'Hyundai';
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 300;
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 3%, rgba(230, 0, 3, 1) 34%, rgba(93, 0, 1, 1) 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 30px 0;
+}
+
+.sec-dealer .text-box .box-para {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: inherit;
+  line-height: 23px;
+  margin: 0 0 20px 0;
+}
+
+.sec-dealer .container .row>div .text-box:last-child {
+  border-bottom: none;
+}
+
+.sec-dealer .billing-address {
+  padding: 40px 40px 40px 40px;
+  background-color: #111111;
+}
+
+.sec-dealer .billing-address .form-head {
+  font-family: "Hyundai";
+  font-size: 25px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.sec-dealer .billing-address .billing-form .custom-label {
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.sec-dealer .billing-address .billing-form .custom-label abbr {
+  color: #fff;
+}
+
+.sec-dealer .billing-address .billing-form .custom-control {
+  border-radius: 0px;
+  background-color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(37, 39, 44, 0.70);
+  text-transform: inherit;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.sec-dealer .billing-address .billing-form .custom-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+
+.sec-dealer .billing-address .billing-form .textarea-control {
+  border-radius: 0px;
+  background-color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(37, 39, 44, 0.70);
+  text-transform: inherit;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.sec-dealer .billing-address .billing-form .textarea-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+
+.sec-dealer .billing-address .billing-form .submit-btn {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 35px 0 0 0;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: inherit;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sec-dealer .billing-address .billing-form .submit-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+.sec-dealer .radio-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.sec-dealer .radio-ul .radio-li {
+  margin: 5px 0 5px 0;
+}
+
+/* radio button */
+
+.sec-dealer .billing-address .checkcontainer {
+  position: relative;
+  padding-left: 50px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Poppins;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sec-dealer .billing-address .checkcontainer .radio-custom {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sec-dealer .billing-address .checkcontainer .radio-custom:checked~.radiobtn {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.sec-dealer .billing-address .checkcontainer .radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sec-dealer .billing-address .checkcontainer .radiobtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+
+.sec-dealer .billing-address .checkcontainer .radio-custom:not(:checked)~.radiobtn {
+  background: linear-gradient(0deg, rgba(93, 0, 1, 1) 10%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 90%);
+}
+
+.sec-dealer .billing-address .checkcontainer .radio-custom:not(:checked)~.radiobtn:after {
+  display: block;
+  background: #fff;
+}
+
+.sec-dealer .billing-address .checkcontainer .radio-custom:checked~.radiobtn:after {
+  display: block;
+}
+
+.sec-dealer .billing-address .checkcontainer .radiobtn::after {
+  top: 2px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(93, 0, 1, 1) 10%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 90%);
+}
+
+/* radio button close*/
+
+
+/* sec-core-info */
+
+.sec-core-info {
+  position: relative;
+  padding: 100px 0 100px 0;
+  background-color: #000;
+}
+
+.sec-core-info .text-box {
+  padding: 0 0 20px 0;
+}
+
+.sec-core-info .text-box .box-head {
+  font-family: 'Hyundai';
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 300;
+  background: linear-gradient( 
+    90deg, rgba(93, 0, 1, 1) -3%, rgba(230, 0, 3, 1) 34%, rgba(93, 0, 1, 1) 93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 20px 0;
+}
+
+.sec-core-info .text-box .box-para {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: inherit;
+  line-height: 23px;
+  margin: 0 0 20px 0;
+  padding: 0 60px 0 0;
+}
+
+.sec-core-info .container .row>div .text-box:last-child {
+  border-bottom: none;
+}
+
+.sec-core-info .billing-address {
+  padding: 40px 40px 40px 40px;
+  background-color: #111111;
+}
+
+.sec-core-info .billing-address .form-head {
+  font-family: "Hyundai";
+  font-size: 25px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.sec-core-info .billing-address .billing-form .custom-label {
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.sec-core-info .billing-address .billing-form .custom-label abbr {
+  color: #fff;
+}
+
+.sec-core-info .billing-address .billing-form .custom-control {
+  border-radius: 0px;
+  background-color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(37, 39, 44, 0.70);
+  text-transform: inherit;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.sec-core-info .billing-address .billing-form .custom-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+
+.sec-core-info .billing-address .billing-form .textarea-control {
+  border-radius: 0px;
+  background-color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(37, 39, 44, 0.70);
+  text-transform: inherit;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.sec-core-info .billing-address .billing-form .textarea-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+
+.sec-core-info .billing-address .billing-form .submit-btn {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 35px 0 0 0;
+  padding: 0;
+  letter-spacing: 2px;
+  line-height: inherit;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sec-core-info .billing-address .billing-form .submit-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+.sec-core-info .radio-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.sec-core-info .radio-ul .radio-li {
+  margin: 5px 0 5px 0;
+}
+
+/* radio button */
+
+.sec-core-info .billing-address .checkcontainer {
+  position: relative;
+  padding-left: 50px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Poppins;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sec-core-info .billing-address .checkcontainer .radio-custom {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sec-core-info .billing-address .checkcontainer .radio-custom:checked~.radiobtn {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.sec-core-info .billing-address .checkcontainer .radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sec-core-info .billing-address .checkcontainer .radiobtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+
+.sec-core-info .billing-address .checkcontainer .radio-custom:not(:checked)~.radiobtn {
+  background: linear-gradient(0deg, rgba(93, 0, 1, 1) 10%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 90%);
+}
+
+.sec-core-info .billing-address .checkcontainer .radio-custom:not(:checked)~.radiobtn:after {
+  display: block;
+  background: #fff;
+}
+
+.sec-core-info .billing-address .checkcontainer .radio-custom:checked~.radiobtn:after {
+  display: block;
+}
+
+.sec-core-info .billing-address .checkcontainer .radiobtn::after {
+  top: 2px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(93, 0, 1, 1) 10%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 90%);
+}
+
+/* radio button close*/
+
+/* sec-powerstroke */
+
+.sec-powerstroke {
+  position: relative;
+  padding: 100px 0 100px 0;
+  background-color: #000;
+}
+
+.sec-powerstroke .power-stroke-side {
+  padding: 0 50px 0 0;
+}
+
+.sec-powerstroke .power-stroke-side .side-ul {
+  padding: 0;
+  margin: 0 0 60px 0;
+}
+
+.sec-powerstroke .power-stroke-side .side-ul .side-h {
+  font-family: Poppins;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 20px;
+}
+
+.sec-powerstroke .power-stroke-side .side-ul .side-h::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -7px;
+  background-color: #C90003;
+  height: 45px;
+  width: 6px;
+}
+
+.sec-powerstroke .power-stroke-side .side-ul .side-li {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+}
+
+.sec-powerstroke .power-stroke-side .side-ul .side-li .side-a {
+  font-family: Poppins;
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #808080;
+  text-decoration: none;
+  margin: 7px 0 5px 20px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  word-break: break-all;
+}
+
+.sec-powerstroke .power-stroke-side .side-ul .side-li .side-a:hover {
+  color: #fff;
+}
+
+.sec-powerstroke .power-main-area-nav {
+  margin: 0 0 50px 0;
+}
+
+.sec-powerstroke .power-main-area-nav .power-head {
+  font-family: Poppins;
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+.sec-powerstroke .power-main-area-nav .nav-text {
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  color: #898989;
+  text-transform: inherit;
+  text-align: left;
+  margin: 0;
+}
+
+.sec-powerstroke .power-main-area-nav .nav-text .total-pro {
+  color: #C90003;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul .view-li .sort-select {
+  position: relative;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul .view-li .sort-select::after {
+  position: absolute;
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Pro";
+  right: 0;
+  top: 9px;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul .view-li .sort-select select {
+  background-color: #000;
+  border: none;
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  appearance: none;
+  padding: 0 15px 0 15px;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul .view-li .sort-select select:focus {
+  outline: none;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul .view-li .view-number .number-head {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 10px 0 0;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul .view-li .view-number .number-a {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 10px;
+  color: #707070;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul .view-li .view-number .number-a:hover {
+  color: #fff;
+}
+
+.sec-powerstroke .power-main-area-nav .view-ul .view-li .grid-a {
+  color: #707070;
+  font-size: 10px;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.sec-powerstroke .power-card {
+  background-color: #000;
+  border: none;
+  overflow: hidden;
+  margin: 40px 0 0 0;
+}
+
+.sec-powerstroke .power-card .power-img .power-thumb {
+  max-height: 150px;
+  max-width: 100%;
+  height: auto;
+  min-height: 150px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.sec-powerstroke .power-card .power-desc .power-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sec-powerstroke .power-card .power-desc .power-h {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 11px;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 25px 0 10px 0;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.sec-powerstroke .power-card .power-desc .power-ul .power-li .power-price {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 15px;
+  color: #C90003;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.sec-powerstroke .power-card .power-desc .power-ul .power-li .power-stars i {
+  color: #FFC400;
+  font-size: 10px;
+}
+
+.sec-powerstroke .pagination-main .page-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sec-powerstroke .pagination-main .page-ul .page-li {
+  padding: 0;
+  margin: 0 8px;
+}
+
+.sec-powerstroke .pagination-main .page-ul .page-li .page-a {
+  text-decoration: none;
+  font-family: 'Lato';
+  font-size: 10px;
+  color: #B7B7B7;
+  text-transform: capitalize;
+  font-weight: 800;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.active-page {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%) !important;
+  color: #fff !important;
+  border-radius: 50px !important;
+}
+
+.sec-powerstroke .pagination-main .page-ul .page-li .page-a:hover {
+  color: #fff;
+}
+
+/* section-product-detail */
+
+.section-product-detail {
+  position: relative;
+  padding: 200px 0 100px 0;
+  background-color: #000;
+}
+
+.section-product-detail .product_gallery-item {
+  border: 1px solid #ddd;
+  display: block;
+  padding: 5px;
+}
+
+.section-product-detail .swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-product-detail img.swiper-main-small {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.section-product-detail .swiper-slide {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100% !important;
+}
+
+.section-product-detail .swiper-slide img.swiper-main-img {
+  width: 100%;
+  border-radius: 0px;
+  min-height: 400px;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 60px;
+}
+
+.section-product-detail .gallery-top {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-product-detail .gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 0 0 0 0;
+  overflow-y: hidden;
+}
+
+.section-product-detail .gallery-thumbs .swiper-slide {
+  opacity: 100;
+  width: 110px !important;
+  border: 3px solid rgb(34, 34, 34);
+  border-radius: 15px;
+  padding: 15px 0px 15px 0px;
+  box-sizing: border-box;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.section-product-detail .gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 3px solid #D90000;
+}
+
+.section-product-detail .swiper-button-next, .swiper-button-prev {
+  width: 40px;
+  height: 50px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.section-product-detail .swiper-button-next, .swiper-button-prev:focus {
+  outline: none;
+}
+
+.section-product-detail .swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white {
+  --swiper-navigation-color: #333;
+}
+
+.section-product-detail .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: -40px;
+  left: auto;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.section-product-detail .swiper-container:hover .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+  opacity: 100;
+  background-color: #81D8D0;
+}
+
+.section-product-detail .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: -40px;
+  right: auto;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.section-product-detail .swiper-container:hover .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+  opacity: 1;
+  background-color: #81D8D0;
+}
+
+.section-product-detail .swiper-button-next:after {
+  text-transform: none!important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+  content: "\f061";
+  font-family: "Font Awesome 5 Pro";
+  color: #fff;
+  font-size: 22px;
+}
+
+.section-product-detail .swiper-button-prev:after {
+  text-transform: none!important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+  content: "\f060";
+  font-family: "Font Awesome 5 Pro";
+  color: #fff;
+  font-size: 22px;
+}
+
+.section-product-detail .product-detail-desc .desc-head {
+  font-family: 'Hyundai';
+  font-size: 22px;
+  line-height: 45px;
+  font-weight: 300;
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 24%, rgba(93, 0, 1, 1) 55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 5px 0;
+  letter-spacing: 1px;
+}
+
+.section-product-detail .product-detail-desc .desc-p {
+  font-family: Poppins;
+  font-size: 23px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 34px;
+  margin: 0 0 20px 0;
+}
+
+.section-product-detail .product-detail-desc .pricing-detail {
+  background-color: #111111;
+  padding: 30px 0 30px 0;
+}
+
+.section-product-detail .product-detail-desc .pricing-detail .input-group {
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.section-product-detail .product-detail-desc .input-group .input-group-btn .btn-quant {
+  background-color: transparent;
+  border-radius: 0;
+  color: #fff;
+  padding: 0;
+}
+
+.section-product-detail .product-detail-desc .input-group .input-group-btn .btn-quant:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.section-product-detail .product-detail-desc .pricing-detail .input-group .input-number {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  height: 46px;
+  text-align: center;
+  opacity: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.section-product-detail .product-detail-desc .pricing-detail .pice-label {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  border-radius: 0 50px 50px 0;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 0 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  padding: 10px 8px 10px 15px;
+  display: block;
+  filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+  /* drop-shadow(offset-x offset-y blur-radius color) */
+}
+
+.section-product-detail .product-detail-desc .pricing-detail .price {
+  font-family: Poppins;
+  font-size: 38px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  text-align: end;
+  letter-spacing: 3px;
+}
+
+.section-product-detail .product-detail-desc .pricing-detail .number-p {
+  font-family: Poppins;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 0 25px;
+  text-align: center;
+}
+
+.section-product-detail .product-detail-desc .add-cart .cart-btn {
+  background: linear-gradient( 
+90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+    font-family: Hyundai;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    margin: 35px 0 0 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: inherit;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.section-product-detail .product-detail-desc .add-cart .cart-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+.section-product-detail .product-detail-desc .add-cart .wish-btn {
+  background-color: #000;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  height: 48px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin: 35px 0 0 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* sec-tabs */
+.sec-tabs {
+  position: relative;
+  padding: 50px 0 50px 0;
+  background-color: #000;
+}
+
+.sec-tabs .categ-pills {
+  justify-content: space-between;
+  border-top: 1px solid #707070;
+}
+
+.sec-tabs .categ-pills .categ-item .categ-link {
+  font-family: Poppins;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin: 35px 0 35px 0;
+  padding: 0;
+  line-height: inherit;
+  width: 300px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  margin-left: auto;
+  background: #0C0C0C;
+  border: 3px solid #0C0C0C;
+  position: relative;
+}
+.sec-tabs .categ-pills .categ-link.active::after {
+  border-bottom: 15px solid #E60003;
+  border-left: 11px solid transparent;
+  border-right: 5px solid transparent;
+  width: 22px;
+  display: block;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  transform: rotate( 
+53deg);
+  position: absolute;
+  bottom: -3px;
+  transition: all 0.5s ease-in-out;
+  content: "";
+}
+.sec-tabs .categ-pills .categ-link.active, .categ-pills .show>.categ-link {
+  background: linear-gradient( 
+90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  color: #fff;
+}
+
+.sec-tabs .categ-content .categ-pane .desc-main .desc-p {
+  font-family: Poppins;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0 0 50px 0;
+}
+.sec-tabs .categ-content .categ-pane .details-main .details-all .detail-p {
+  font-family: Poppins;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 0 0;
+}
+.sec-tabs .categ-content .categ-pane .details-main .details-all .detail-p .red-h {
+  color: #C90003;
+  font-weight: 500;
+}
+.sec-tabs .categ-content .categ-pane .details-main .categories .categ-h {
+  font-family: Poppins;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+  margin: 20px 0 5px 0px;
+  text-transform: capitalize;
+}
+.sec-tabs .categ-content .categ-pane .details-main .categories .categ-p {
+  font-family: Poppins;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 0 0;
+}
+
+.sec-tabs .categ-content .categ-pane .shipping-main .shipping-all .shipping-p {
+  font-family: Poppins;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 0 0;
+}
+.sec-tabs .categ-content .categ-pane .shipping-main .shipping-all .shipping-p .shipping-h {
+  color: #C90003;
+  font-weight: 500;
+}
+
+.sec-tabs .categ-content .categ-pane .shipping-main .shipping-all .shipping-h {
+  font-family: Poppins;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0px 0 20px 0px;
+  text-transform: capitalize;
+}
+.sec-tabs .categ-content .categ-pane .reviews-main .review-h {
+  font-family: Poppins;
+  font-size: 27px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0px 0 60px 30px;
+  text-transform: capitalize;
+}
+.sec-tabs .categ-content .categ-pane .reviews-main .review-card {
+  background-color: #000;
+  border: none;
+  overflow: hidden;
+  margin: 0 0 60px 0;
+}
+.sec-tabs .categ-content .categ-pane .reviews-main .review-card .review-ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.sec-tabs .categ-content .categ-pane .reviews-main .review-card .review-ul .review-li .rev-cust {
+  font-family: Poppins;
+  font-size: 27px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0px 0 0px 0px;
+  text-transform: capitalize;
+}
+.sec-tabs .categ-content .categ-pane .reviews-main .review-card .review-ul .review-li .rev-day{
+  font-family: Poppins;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0px 0 20px 0px;
+  text-transform: capitalize;
+}
+.sec-tabs .categ-content .categ-pane .reviews-main .review-card .review-ul .review-li .stars i {
+  color: #FFC400;
+  font-size: 12px;
+}
+.sec-tabs .categ-content .categ-pane .reviews-main .review-card .rev-para {
+  font-family: Poppins;
+  font-size: 14px;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  margin: 20px 0 0px 0px;
+  text-transform: inherit;
+}
+
+/* section-apparel-detail */
+
+.section-apparel-detail {
+  position: relative;
+  padding: 200px 0 100px 0;
+  background-color: #000;
+}
+
+.section-apparel-detail .product_gallery-item {
+  border: 1px solid #ddd;
+  display: block;
+  padding: 5px;
+}
+
+.section-apparel-detail .swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-apparel-detail img.swiper-main-small {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.section-apparel-detail .swiper-slide {
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100% !important;
+}
+
+.section-apparel-detail .swiper-slide img.swiper-main-img {
+  width: 100%;
+  border-radius: 0px;
+  min-height: 400px;
+  max-height: 400px;
+  object-fit: contain;
+  margin-bottom: 60px;
+}
+
+.section-apparel-detail .gallery-top {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-apparel-detail .gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 0 0 0 0;
+  overflow-y: hidden;
+}
+
+.section-apparel-detail .gallery-thumbs .swiper-slide {
+  opacity: 100;
+  width: 110px !important;
+  border: 3px solid rgb(34, 34, 34);
+  border-radius: 15px;
+  padding: 15px 0px 15px 0px;
+  box-sizing: border-box;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+.section-apparel-detail .gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 3px solid #D90000;
+}
+
+.section-apparel-detail .swiper-button-next, .swiper-button-prev {
+  width: 40px;
+  height: 50px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.section-apparel-detail .swiper-button-next, .swiper-button-prev:focus {
+  outline: none;
+}
+
+.section-apparel-detail .swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white {
+  --swiper-navigation-color: #333;
+}
+
+.section-apparel-detail .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: -40px;
+  left: auto;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.section-apparel-detail .swiper-container:hover .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+  opacity: 100;
+  background-color: #81D8D0;
+}
+
+.section-apparel-detail .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: -40px;
+  right: auto;
+  opacity: 0;
+  background-color: #fff;
+}
+
+.section-apparel-detail .swiper-container:hover .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+  opacity: 1;
+  background-color: #81D8D0;
+}
+
+.section-apparel-detail .swiper-button-next:after {
+  text-transform: none!important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+  content: "\f061";
+  font-family: "Font Awesome 5 Pro";
+  color: #fff;
+  font-size: 22px;
+}
+
+.section-apparel-detail .swiper-button-prev:after {
+  text-transform: none!important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+  content: "\f060";
+  font-family: "Font Awesome 5 Pro";
+  color: #fff;
+  font-size: 22px;
+}
+
+.section-apparel-detail .product-detail-desc .desc-head {
+  font-family: 'Hyundai';
+  font-size: 22px;
+  line-height: 45px;
+  font-weight: 300;
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 24%, rgba(93, 0, 1, 1) 55%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 5px 0;
+  letter-spacing: 1px;
+}
+
+.section-apparel-detail .product-detail-desc .desc-p {
+  font-family: Poppins;
+  font-size: 23px;
+  color: #fff;
+  font-weight: 300;
+  line-height: 34px;
+  margin: 0 0 20px 0;
+}
+
+.section-apparel-detail .product-detail-desc .pricing-detail {
+  background-color: #111111;
+  padding: 30px 0 30px 0;
+}
+
+.section-apparel-detail .product-detail-desc .pricing-detail .input-group {
+  align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.section-apparel-detail .product-detail-desc .input-group .input-group-btn .btn-quant {
+  background-color: transparent;
+  border-radius: 0;
+  color: #fff;
+  padding: 0;
+}
+
+.section-apparel-detail .product-detail-desc .input-group .input-group-btn .btn-quant:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.section-apparel-detail .product-detail-desc .pricing-detail .input-group .input-number {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  height: 46px;
+  text-align: center;
+  opacity: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.section-apparel-detail .product-detail-desc .pricing-detail .pice-label {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  border-radius: 0 50px 50px 0;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 0 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  padding: 10px 8px 10px 15px;
+  display: block;
+  filter: drop-shadow(0px 0px 10px rgb(0, 0, 0));
+  /* drop-shadow(offset-x offset-y blur-radius color) */
+}
+
+.section-apparel-detail .product-detail-desc .pricing-detail .price {
+  font-family: Poppins;
+  font-size: 38px;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  text-align: end;
+  letter-spacing: 3px;
+}
+
+.section-apparel-detail .product-detail-desc .pricing-detail .number-p {
+  font-family: Poppins;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0 0 0 25px;
+  text-align: center;
+}
+
+.section-apparel-detail .product-detail-desc .add-cart .cart-btn {
+  background: linear-gradient( 
+90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+    font-family: Hyundai;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    margin: 35px 0 0 0;
+    padding: 0;
+    letter-spacing: 2px;
+    line-height: inherit;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.section-apparel-detail .product-detail-desc .add-cart .cart-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+.section-apparel-detail .product-detail-desc .add-cart .wish-btn {
+  background-color: #000;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  height: 48px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin: 35px 0 0 0;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* sec-powerstroke */
+
+.sec-apparel {
+  position: relative;
+  padding: 100px 0 140px 0;
+  background-color: #000;
+}
+
+.sec-apparel .power-stroke-side {
+  padding: 0 50px 0 0;
+}
+
+.sec-apparel .power-stroke-side .side-ul {
+  padding: 0;
+  margin: 0 0 60px 0;
+}
+
+.sec-apparel .power-stroke-side .side-ul .side-h {
+  font-family: Poppins;
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 20px;
+}
+
+.sec-apparel .power-stroke-side .side-ul .side-h::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -7px;
+  background-color: #C90003;
+  height: 45px;
+  width: 6px;
+}
+
+.sec-apparel .power-stroke-side .side-ul .side-li {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+}
+
+.sec-apparel .power-stroke-side .side-ul .side-li .side-a {
+  font-family: Poppins;
+  font-size: 17px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #808080;
+  text-decoration: none;
+  margin: 7px 0 5px 20px;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  word-break: break-all;
+}
+
+.sec-apparel .power-stroke-side .side-ul .side-li .side-a:hover {
+  color: #fff;
+}
+
+.sec-apparel .power-main-area-nav {
+  margin: 0 0 50px 0;
+}
+
+.sec-apparel .power-main-area-nav .power-head {
+  font-family: Poppins;
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+
+.sec-apparel .power-main-area-nav .nav-text {
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  color: #898989;
+  text-transform: inherit;
+  text-align: left;
+  margin: 0;
+}
+
+.sec-apparel .power-main-area-nav .nav-text .total-pro {
+  color: #C90003;
+}
+
+.sec-apparel .power-main-area-nav .view-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+}
+
+.sec-apparel .power-main-area-nav .view-ul .view-li .sort-select {
+  position: relative;
+}
+
+.sec-apparel .power-main-area-nav .view-ul .view-li .sort-select::after {
+  position: absolute;
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Pro";
+  right: 0;
+  top: 9px;
+  color: #fff;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.sec-apparel .power-main-area-nav .view-ul .view-li .sort-select select {
+  background-color: #000;
+  border: none;
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  appearance: none;
+  padding: 0 15px 0 15px;
+}
+
+.sec-apparel .power-main-area-nav .view-ul .view-li .sort-select select:focus {
+  outline: none;
+}
+
+.sec-apparel .power-main-area-nav .view-ul .view-li .view-number .number-head {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 10px 0 0;
+}
+
+.sec-apparel .power-main-area-nav .view-ul .view-li .view-number .number-a {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 10px;
+  color: #707070;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sec-apparel .power-main-area-nav .view-ul .view-li .view-number .number-a:hover {
+  color: #fff;
+}
+
+.sec-apparel .power-main-area-nav .view-ul .view-li .grid-a {
+  color: #707070;
+  font-size: 10px;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+.sec-apparel .power-card {
+  background-color: #000;
+  border: none;
+  overflow: hidden;
+  margin: 50px 0 0 0;
+}
+
+.sec-apparel .power-card .power-img .power-thumb {
+  max-height: 250px;
+  max-width: 100%;
+  height: auto;
+  min-height: 150px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.sec-apparel .power-card .power-desc .power-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sec-apparel .power-card .power-desc .power-h {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 25px 0 10px 0;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+.sec-apparel .power-card .power-desc .power-ul .power-li .power-price {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 15px;
+  color: #C90003;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.sec-apparel .power-card .power-desc .power-ul .power-li .power-stars i {
+  color: #FFC400;
+  font-size: 10px;
+}
+
+.sec-apparel .pagination-main .page-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sec-apparel .pagination-main .page-ul .page-li {
+  padding: 0;
+  margin: 0 8px;
+}
+
+.sec-apparel .pagination-main .page-ul .page-li .page-a {
+  text-decoration: none;
+  font-family: 'Lato';
+  font-size: 10px;
+  color: #B7B7B7;
+  text-transform: capitalize;
+  font-weight: 800;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+.active-page {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%) !important;
+  color: #fff !important;
+  border-radius: 50px !important;
+}
+
+.sec-apparel .pagination-main .page-ul .page-li .page-a:hover {
+  color: #fff;
+}
+
+
+/* sec-warranties */
+.sec-warranties {
+  position: relative;
+  padding: 100px 0 100px 0;
+  background-color: #000;
+}
+
+.sec-warranties .text-box {
+  padding: 0 0 20px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.sec-warranties .text-box .box-head {
+  font-family: 'Hyundai';
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 300;
+  background: linear-gradient( 
+    90deg, rgba(93, 0, 1, 1) -3%, rgba(230, 0, 3, 1) 34%, rgba(93, 0, 1, 1) 93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 20px 0;
+}
+
+.sec-warranties .text-box .box-para {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: inherit;
+  line-height: 23px;
+  margin: 0 0 0 0;
+  padding: 0 60px 0 0;
+}
+
+.sec-warranties .container .row>div .text-box:last-child {
+  border-bottom: none;
+}
+
+.sec-warranties .billing-address {
+  padding: 40px 40px 40px 40px;
+  background-color: #111111;
+}
+
+.sec-warranties .billing-address .form-head {
+  font-family: "Hyundai";
+  font-size: 25px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.sec-warranties .billing-address .billing-form .custom-label {
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.sec-warranties .billing-address .billing-form .custom-label abbr {
+  color: #fff;
+}
+
+.sec-warranties .billing-address .billing-form .custom-control {
+  border-radius: 0px;
+  background-color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(37, 39, 44, 0.70);
+  text-transform: inherit;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.sec-warranties .billing-address .billing-form .custom-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+
+.sec-warranties .billing-address .billing-form .textarea-control {
+  border-radius: 0px;
+  background-color: #fff;
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(37, 39, 44, 0.70);
+  text-transform: inherit;
+  font-weight: 500;
+  margin: 0 0 15px 0;
+}
+
+.sec-warranties .billing-address .billing-form .textarea-control:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+
+.sec-warranties .billing-address .billing-form .submit-btn {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 35px 0 0 0;
+  padding: 0;
+  line-height: inherit;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.sec-warranties .billing-address .billing-form .submit-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+.sec-warranties .radio-ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.sec-warranties .radio-ul .radio-li {
+  margin: 5px 0 5px 0;
+}
+
+/* radio button */
+
+.sec-warranties .billing-address .checkcontainer {
+  position: relative;
+  padding-left: 50px;
+  margin: 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: Poppins;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 500;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sec-warranties .billing-address .checkcontainer .radio-custom {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.sec-warranties .billing-address .checkcontainer .radio-custom:checked~.radiobtn {
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.sec-warranties .billing-address .checkcontainer .radiobtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.sec-warranties .billing-address .checkcontainer .radiobtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background-color: #fff;
+}
+
+.sec-warranties .billing-address .checkcontainer .radio-custom:not(:checked)~.radiobtn {
+  background: linear-gradient(0deg, rgba(93, 0, 1, 1) 10%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 90%);
+}
+
+.sec-warranties .billing-address .checkcontainer .radio-custom:not(:checked)~.radiobtn:after {
+  display: block;
+  background: #fff;
+}
+
+.sec-warranties .billing-address .checkcontainer .radio-custom:checked~.radiobtn:after {
+  display: block;
+}
+
+.sec-warranties .billing-address .checkcontainer .radiobtn::after {
+  top: 2px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(93, 0, 1, 1) 10%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 90%);
+}
+
+/* section-checkout */
+
+.section-checkout {
+  position: relative;
+  padding: 100px 0 140px 0;
+  background-color: #000;
+}
+
+.section-checkout .checkout-form {}
+
+.section-checkout .checkout-form .form-h {
+  font-family: "Hyundai";
+  font-size: 25px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0px;
+}
+
+.section-checkout .checkout-form .form-p {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+  margin: 5px 0 0 0;
+  line-height: 27px;
+  padding: 0;
+  text-align: end;
+}
+
+.section-checkout .checkout-form .form-p .signup-a {
+  color: #fff;
+}
+.section-checkout .checkout-form .form-head {
+  border-bottom: 1px solid #aaaaaa99;
+  margin: 0 0 30px 0;
+  padding: 0 0 30px 0;
+}
+.section-checkout .checkout-form .custom-label {
+  font-family: "Hyundai";
+  font-size: 15px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+}
+
+.section-checkout .checkout-form .custom-control {
+  font-family: Poppins;
+  font-size: 15px;
+  color: #636363;
+  text-transform: inherit;
+  font-weight: 500;
+  width: 100%;
+  height: 55px;
+  margin: 12px 0 28px 0;
+  padding: 5px 5px 5px 40px;
+  background-color: #fff;
+  border: 1px solid #636363;
+  border-radius: 3px;
+}
+
+.section-checkout .checkout-form .custom-control::-webkit-input-placeholder {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-checkout .checkout-form .custom-control:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-checkout .checkout-form .custom-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-checkout .checkout-form .custom-control:-ms-input-placeholder {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-checkout .checkout-form .login-btn {
+  background: linear-gradient( 
+    360deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+        font-family: Poppins;
+        font-size: 17px;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: #fff;
+        margin: 35px 0 0 0;
+        padding: 0;
+        line-height: inherit;
+        width: 45%;
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        transition: all 0.5s ease-in-out;
+        margin-left: auto;
+}
+
+.section-checkout .checkout-form .login-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+
+.section-checkout .checkout-form .payment-btn {
+  /* background: linear-gradient( 
+    360deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%); */
+    background: #FFFFFF;
+        font-family: Poppins;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: #BABABA;
+        margin: 0 0 50px 0;
+        padding: 0;
+        line-height: inherit;
+        width: 100%;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        transition: all 0.5s ease-in-out;
+}
+.section-checkout .checkout-form .payment-btn:hover {
+  background: linear-gradient( 
+    360deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+    color: #fff;
+    font-size: 14px;
+}
+.section-checkout .checkout-form .payment-btn .payment-card {
+  width: 20%;
+  display: block;
+  margin: 0 10px 0 0;
+  transition: all 0.5s ease-in-out;
+} 
+.section-checkout .checkout-form .payment-btn:hover .payment-card {
+  filter: brightness(5.5);
+}
+.section-checkout .checkout-form .payment-btn .payment-trans {
+  width: 11%;
+  display: block;
+  margin: 0 10px 0 0;
+  transition: all 0.5s ease-in-out;
+}
+.section-checkout .checkout-form .payment-btn:hover .payment-trans {
+  filter: brightness(5.5);
+}
+.section-checkout .checkout-form .payment-btn .payment-paypal {
+  width: 14%;
+  display: block;
+  margin: 0 10px 0 0;
+  transition: all 0.5s ease-in-out;
+}
+.section-checkout .checkout-form .payment-btn:hover .payment-paypal {
+  filter: brightness(5.5);
+}
+
+.section-checkout .checkout-form .check-select {
+  font-family: Poppins;
+  font-size: 16px;
+  color: #636363cb;
+  text-transform: capitalize;
+  font-weight: 500;
+  width: 100%;
+  height: 55px;
+  margin: 12px 0 12px 0;
+  padding: 5px 5px 5px 20px;
+  background-color: #fff;
+  border: 1px solid #636363;
+  border-radius: 3px;
+  background-image: url(../images/arrow-down.png);
+  background-position: right 2rem center;
+  background-size: 17px 10px;
+}
+
+/* section-contact */
+
+.section-contact {
+  position: relative;
+  padding: 100px 0 200px 0;
+  background-color: #000;
+}
+
+.section-contact .contact-form {}
+
+.section-contact .contact-form .form-h {
+  font-family: "Hyundai";
+  font-size: 30px;
+  color: #fff;
+  text-transform: inherit;
+  text-align: left;
+  margin: 0 0 50px 0;
+  padding: 0;
+  letter-spacing: 1px;
+}
+
+.section-contact .contact-form .custom-label {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.section-contact .contact-form .custom-control {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: inherit;
+  font-weight: 500;
+  width: 100%;
+  height: 70px;
+  margin: 15px 0 20px 0;
+  padding: 5px 5px 5px 40px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+
+.section-contact .contact-form .custom-control::-webkit-input-placeholder {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-contact .contact-form .custom-control:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-contact .contact-form .custom-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-contact .contact-form .custom-control:-ms-input-placeholder {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-contact .contact-form .txt-area-control {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: inherit;
+  font-weight: 500;
+  width: 100%;
+  margin: 12px 0 12px 0;
+  padding: 5px 5px 5px 40px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  resize: none;
+}
+
+.section-contact .contact-form .txt-area-control::-webkit-input-placeholder {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-contact .contact-form .txt-area-control:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-contact .contact-form .txt-area-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-contact .contact-form .txt-area-control:-ms-input-placeholder {
+  font-family: Poppins;
+  font-size: 20px;
+  color: rgba(37, 39, 44, 0.3);
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.section-contact .contact-form .login-btn {
+  background: linear-gradient( 90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 35px 0 0 0;
+  padding: 0;
+  line-height: inherit;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+}
+
+.section-contact .contact-form .login-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+.section-contact .contact-ul {
+  margin: 0;
+  padding: 0;
+}
+.section-contact .contact-ul .contact-li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+.section-contact .contact-ul .contact-li .contact-a {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 400;
+  color: #C90003;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+/* section-cart */
+.section-cart {
+  position: relative;
+  padding: 80px 0 150px 0;
+  background-color: #000;
+}
+.section-cart .cart-head-main {
+  border-bottom: 1px solid #d7d7d770;
+  padding: 0 0 20px 0;
+}
+/* .section-cart .cart-head-main .cart-head .cart-h {
+  font-family: "Hyundai";
+  font-size: 20px;
+  color: #fff;
+  text-transform: inherit;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+} */
+
+.section-cart .cart-table thead tr th {
+  font-family: "Hyundai";
+  font-size: 17px;
+  color: #fff;
+  text-transform: inherit;
+  margin: 0;
+  padding: 0px 0 20px 0;
+  letter-spacing: 2px;
+  border: none;
+}
+.section-cart .cart-table thead tr th:nth-child(3) {
+  text-align: center;
+}
+.section-cart .cart-table tbody tr td:nth-child(1) .cart-img {
+  width: 100px;
+  /* display: block; */
+}
+.section-cart .cart-table tbody tr {
+  border-bottom: 1px solid #d7d7d796;
+}
+.section-cart .cart-table thead {
+  border-bottom: 1px solid #d7d7d796;
+}
+.section-cart .cart-table thead tr {
+  border-bottom: 1px solid #d7d7d796;
+}
+.section-cart .cart-table tbody tr td .cart-desc .pro-name {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 0;
+}
+.section-cart .cart-table tbody tr td .cart-desc .pro-categ {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+}
+.section-cart .cart-table tbody tr td:nth-child(3) .input-group {
+  align-items: center;
+  width: 120px;
+  margin: 0 auto;
+  border: 1px solid #d9d9d98a;
+  border-radius: 17px;
+  padding: 0 15px;
+}
+
+.section-cart .cart-table tbody tr td:nth-child(3) .input-group .input-group-btn .btn-quant {
+  background-color: transparent;
+  border-radius: 0;
+  color: #AAAAAA;
+  padding: 0;
+}
+
+.section-cart .cart-table tbody tr td:nth-child(3) .input-group .input-group-btn .btn-quant:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.section-cart .cart-table tbody tr td:nth-child(3) .input-group .input-number {
+  font-family: Poppins;
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  height: 46px;
+  text-align: center;
+  opacity: 100%;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.section-cart .cart-table tbody tr td:nth-child(4) .price {
+  font-family: Poppins;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+}
+
+.section-cart .cart-table tbody tr td:nth-child(5) .price {
+  font-family: Poppins;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+}
+.section-cart .total {
+  background-color: #111111;
+  padding: 40px 40px;
+  margin: 0 0 60px 0;
+}
+.section-cart .total .coupon-control {
+  font-family: Poppins;
+  font-size: 14px;
+  color: rgba(112, 112, 112, 0.76);
+  text-transform: inherit;
+  font-weight: 400;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  padding: 5px 5px 5px 25px;
+  background-color: transparent;
+  border: 1px solid #ffffff87;
+  border-radius: 50px;
+}
+
+.section-cart .total .coupon-control::-webkit-input-placeholder {
+  font-family: Poppins;
+  font-size: 14px;
+  color: rgba(112, 112, 112, 0.76);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.section-cart .total .coupon-control:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(112, 112, 112, 0.76);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.section-cart .total .coupon-control::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(112, 112, 112, 0.76);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.section-cart .total .coupon-control:-ms-input-placeholder {
+  font-family: Poppins;
+  font-size: 15px;
+  color: rgba(112, 112, 112, 0.76);
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.section-cart .total .coupon-btn {
+  background: linear-gradient( 
+    360deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        color: #fff;
+        margin: 0 0 0 0;
+        padding: 0;
+        line-height: inherit;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        transition: all 0.5s ease-in-out;
+}
+
+.section-cart .total .coupon-btn:hover {
+  background: #fff;
+  color: #e60003;
+  border: 1px solid #e60003;
+}
+.section-cart .total .total-price .total-h{
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 0 0;
+  padding: 0;
+  text-align: right;
+}
+.section-cart .total .total-price .tp{
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #fff;
+  margin: 0 0 0 0;
+  padding: 0;
+  text-align: right;
+}
+.section-cart .checkout-btn-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.section-cart .checkout-btn-main .continue-btn {
+  background: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        color: #fff;
+        margin: 0 0 0 0;
+        padding: 0;
+        line-height: inherit;
+        width: 20%;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #C90003;
+        border-radius: 50px;
+        transition: all 0.5s ease-in-out;
+}
+.section-cart .checkout-btn-main .checkout-btn {
+  background: linear-gradient( 
+    360deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        color: #fff;
+        margin: 0 0 0 30px;
+        padding: 0;
+        line-height: inherit;
+        width: 20%;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        transition: all 0.5s ease-in-out;
+}
+.section-cart .checkout-btn-main .checkout-btn:hover {
+  background: #fff;
+    color: #e60003;
+    border: 1px solid #e60003;
+}
+
+/* sec-brands */
+
+.sec-photo-gallery {
+  position: relative;
+  padding: 100px 0 100px 0;
+  background-color: #000;
+}
+
+.sec-photo-gallery .gallery-card {
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  overflow: hidden;
+}
+
+.sec-photo-gallery .gallery-card .brand-img .gallery-thumb {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* section-about */
+.section-about {
+  position: relative;
+  padding: 100px 0 100px 0;
+  background-color: #000;
+}
+.section-about .about-desc .about-p {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 23px;
+  margin: 0 0 25px 0;
+}
+.section-about .about-thumb {
+  max-width: 100%;
+  height: auto;
+}
+
+/* section-install */
+
+.section-install {
+  position: relative;
+  background-color: #000;
+  padding: 100px 0 100px 0;
+}
+.section-install .sec-p {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 0 0;
+}
+.section-install .instruction-box {
+  margin: 30px 0 0 0;
+}
+.section-install .instruction-box .box-h {
+  font-family: "Hyundai";
+  font-size: 30px;
+  color: #fff;
+  text-transform: inherit;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+.section-install .instruction-box .download-a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 40px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+.section-install .instruction-box .download-a::before {
+  content: "\f381";
+  position: absolute;
+  display: block;
+  font-family: "Font Awesome 5 Pro";
+  left: 0;
+  top: -4px;
+  font-weight: 600;
+  color: #C90003;
+  font-size: 20px;
+}
+
+
+/*locate-dealer*/
+.locate-dealer{
+  background:#000000;
+  padding: 80px 0 73px;
+}
+.locate-dealer .locate-dealer-para{
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 0 80px 0;
+}
+.locate-dealer .map-locate iframe{
+  border-radius: 40px;
+}
+.locate-dealer .map-locate{
+  position: relative;
+}
+.locate-dealer .map-locate .zip-code{
+  padding: 39px 45px;
+  background: rgb(101 4 4 / 35%);
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.locate-dealer .map-locate .zip-code h2{
+      color: #FFFFFF;
+    font-family: 'Hyundai';
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 0 0 31px;
+}
+.locate-dealer .map-locate .zip-code h3{
+      color: #FFFFFF;
+    font-family: 'Hyundai';
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin: 35px 0 31px;
+}
+.locate-dealer .map-locate .zip-code h4{
+      color: #FFFFFF;
+    font-family: 'Hyundai';
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 0 0 21px;
+}
+.locate-dealer .map-locate .zip-code h4 span{
+      color: #C90003;
+    margin: 0 0 0 100px;
+}
+.locate-dealer .map-locate .zip-code  label{
+      color: #fff;
+    font-size: 12px;
+    font-family: 'Hyundai';
+    letter-spacing: 1px;
+}
+.locate-dealer .map-locate .zip-code  input{
+    width: 60%;
+    border-radius: 50px;
+    height: 45px;
+    border: none;
+    outline: none;
+    padding: 0px 0 0 15px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #636363;
+  }
+  .locate-dealer .map-locate .zip-code  input::placeholder{
+    color: #636363;
+  }
+  .locate-dealer .map-locate .zip-code  .margin-set{
+    margin: 0 0 19px;
+  }
+  .locate-dealer .map-locate .zip-code hr{
+        color: #FFFFFF;
+    opacity: 1;
+  }
+  .locate-dealer .map-locate .zip-code .custom-select label{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Hyundai';
+    letter-spacing: 1px;
+    margin: 0 0 11px;
+  }
+    .locate-dealer .map-locate .zip-code .custom-select select{
+        width: 86%;
+    border-radius: 50px;
+    height: 38px;
+    border: none;
+    outline: none;
+    padding:0px 15px 0;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 500;
+  }
+  .locate-dealer .map-locate .zip-code .locate-button{
+        float: right;
+    margin: 42px 0 0 0;
+  }
+  .locate-dealer .map-locate .zip-code .locate-button a{
+        background: linear-gradient( 
+90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+    font-size: 16px;
+    font-family: 'Hyundai';
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px 37px;
+    margin: 0 0 0;
+  }
+
+  .locate-dealer .map-locate .zip-code .locate-button a:hover{
+    background: #fff;
+    color: #e60003;
+    border: 1px solid #e60003;
+  }
+
+  .locate-dealer .map-locate .zip-code-set{
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    width: 90%;
+  }
+  .table-section{
+    background: #000;
+    padding: 0 0 100px;
+  }
+.table-section h3{
+        font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'Hyundai';
+    letter-spacing: 1px;
+    margin: 0 0 80px;
+  }
+.table-section .addres-top{
+  margin: 0 0 95px;
+}
+.table-section .diesel{
+  padding: 15px 52px;
+    background: #111111;
+    border-radius: 20px;
+}
+.table-section .diesel h4{
+  font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #C90003;
+    margin: 0;
+}
+.table-section .diesel p{
+      color: #FFFFFF;
+    font-weight: 300;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin: 0;
+}
+.table-section .direction{
+    padding: 15px 52px;
+    background: #111111;
+    border-radius: 20px;
+}
+.table-section .direction h5{
+  color: #C90003;
+  font-size: 14px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 0;
+}
+.table-section .direction p{
+        color: #FFFFFF;
+    font-weight: 300;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin: 0;
+}
+.table-section .address{
+      padding: 45px 40px;
+    background: #111111;
+    border-radius: 20px;
+}
+.table-section .address p{
+          color: #FFFFFF;
+    font-weight: 300;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin: 0;
+}
+.table-section .address p a{
+      text-decoration: none;
+    color: #C90003;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 0 0 5px;
+}
+.table-section hr{
+  opacity: 1;
+  height: 1px;
+  margin: 36px 0 45px;
+  background-color: #707070;
+}
+.table-section .pagination-main{
+      margin: 45px 0;
+}
+.table-section .pagination-main .page-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+.table-section .pagination-main .page-ul .page-li {
+    padding: 0;
+    margin: 0 8px;
+}
+.table-section .active-page {
+    background: linear-gradient( 
+90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%) !important;
+    color: #fff !important;
+    border-radius: 50px !important;
+}
+.table-section .pagination-main .page-ul .page-li .page-a {
+    text-decoration: none;
+    font-family: 'Lato';
+    font-size: 10px;
+    color: #B7B7B7;
+    text-transform: capitalize;
+    font-weight: 800;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+}
+
+/*Events*/
+.upcoming-events{
+padding: 50px 0;
+background: #000;
+}
+.upcoming-events h2{
+  color: #fff;
+    font-family: 'Hyundai';
+    font-size: 24px;
+    margin: 45px 0;
+}
+.upcoming-events .car-slider .car-img{
+  position: relative;
+}
+.upcoming-events .car-slider .car-img:before{
+  content: '';
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(255,0,3,1), rgba(255,0,3,0.59) , rgba(255,0,3,0));
+top: 2px;
+left: 2px;
+right: 0;
+bottom: 2px;
+border-radius: 25px;
+}
+.upcoming-events .car-slider .content-slider h3{
+      color: #FFFFFF;
+    font-size: 34px;
+    font-family: 'Hyundai';
+    letter-spacing: 3px;
+    margin:0 0 125px;
+}
+.upcoming-events .car-slider .content-slider h4{
+      font-size: 60px;
+    font-family: 'Hyundai';
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin: 0 0 7px;
+}
+.upcoming-events .car-slider .content-slider p{
+  color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin: 0 0 40px;
+}
+.upcoming-events .car-slider .content-slider h5{
+      font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: #ffffff;
+}
+
+.upcoming-events .car-slider .content-slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 45px;
+}
+
+.slick-prev, .slick-next{
+      top: inherit;
+    bottom: 35px;
+    right: 75px;
+    z-index: 1;
+}
+.slick-prev{
+    right: 125px;
+    left: inherit;
+    z-index: 1;
+    bottom: 35px;
+}
+.slick-prev:before{
+    content: '';
+    background-image: url(../images/left-arrow.png);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    opacity: 1;
+
+}
+.slick-next:before{
+    content: '';
+    background-image: url(../images/right-arrow.png);
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    opacity: 1;
+
+}
+.form-section{
+  background: #000;
+  padding: 0 0 90px;
+}
+.form-section .custom-input label{
+  font-size: 24px;
+  font-family: 'Hyundai';
+  margin: 0 0 14px;
+  color: #fff;
+}
+.form-section .custom-input input{
+    width: 100%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #636363;
+    padding: 0 0 0 15px;
+}
+.form-section button{
+  background: linear-gradient( 
+90deg, rgba(93, 0, 1, 1) 0%, rgba(230, 0, 3, 1) 50%, rgba(93, 0, 1, 1) 100%);
+    font-size: 16px;
+    font-family: 'Hyundai';
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    height: 50px;
+    border-radius: 40px;
+    padding: 10px 37px;
+    margin: 0 0 0;
+    border: none;
+    display: block;
+    width: 100%;
+}
+.form-section button:hover{
+      background: #fff;
+    color: #e60003;
+    border: 1px solid #e60003;
+}
+
+
+/*calender*/
+.calender-section{
+  background: #000;
+  padding: 0 0 102px;
+}
+
+.calender-section #calendar {
+  width: 100%;  
+}
+
+.calender-section #calendar a {
+  color: #8e352e;
+  text-decoration: none;
+}
+
+.calender-section #calendar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.calender-section #calendar li {
+  display: block;
+  float: left;
+  width:14.342%;
+  padding: 5px;
+  box-sizing:border-box;
+  border: 3px solid #fff;
+  margin-right: -1px;
+  margin-bottom: -1px;
+}
+.calender-section #calendar .weekdays li:nth-child(1){
+  border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.calender-section #calendar .weekdays li:nth-child(7){
+  border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.calender-section #calendar .radius-set li:nth-child(1){
+  border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.calender-section #calendar .radius-set li:nth-child(7){
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;;
+}
+
+.calender-section #calendar ul.weekdays {
+  height: 40px;
+      background: #000;
+}
+
+.calender-section #calendar ul.weekdays li {
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 20px;
+    border:3px solid #FFFFFF;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Poppins';
+}
+
+.calender-section #calendar .days li {
+  height: 180px;
+}
+
+
+
+.calender-section #calendar .date {
+    padding: 4px;
+    color: #fff;
+    float: left;
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.calender-section #calendar .event {
+    clear: both;
+    font-size: 13px;
+    padding: 5px;
+    margin-top: 110px;
+    color: #C90003;
+    float: right;
+    text-decoration: underline;
+    font-family: 'Poppins';
+    font-weight: bold;
+  }
+
+.calender-section #calendar .event-desc {
+  color: #666;
+  margin: 3px 0 7px 0;
+  text-decoration: none;  
+}
+
+.calender-section #calendar .other-month {
+  color: #666;
+}
+
+/* ============================
+        Mobile Responsiveness
+   ============================*/
+
+
+@media(max-width: 768px) {
+
+  .calender-section #calendar .weekdays, .calender-section #calendar .other-month {
+    display: none;
+  }
+
+  .calender-section #calendar li {
+    height: auto !important;
+    border: 3px solid #fff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: -1px;
+  }
+
+  .calender-section #calendar .date {
+    float: none;
+  }
+}
+
+
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px){}
+@media only screen and (min-width: 1445px) and (max-width: 1599px) {}
+@media only screen and (min-width: 1366px) and (max-width: 1444px) {}
+@media only screen and (min-width: 1200px) and (max-width: 1365px){}
+@media only screen and (min-width: 992px) and (max-width: 1199px){}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .mega_menu_2,
+  .mega_menu{
+    background-color: #fff;
+    width: 660px;
+    height: 271px;
+    position: absolute;
+  }
+  .mega_menu_2 .nav-item button ,
+  .mega_menu .nav-item button {
+    width: 150px;
+}
+
+.mega_menu .tab-content .tab1_list_img img,
+.mega_menu_2 .tab-content .tab1_list_img img  {
+  width: 66%;
+  object-fit: cover;
+}
+
+
+}
+@media only screen and (min-width: 520px) and (max-width: 767px){}
+@media only screen and (min-width: 300px) and (max-width: 519px){}
+
+/* b css  */
